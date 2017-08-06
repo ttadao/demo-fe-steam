@@ -138,6 +138,9 @@ header h3, footer h3{
 	font-size: 1.5em;/*ok*/
 	margin:auto;
 }
+header img{
+	box-shadow: 0px 0px 15px 0px;
+}
 footer{
 	margin-top: 20px;
 }
@@ -281,11 +284,19 @@ input[type="text"]{
 	width: 300px;
 	font-size: 12pt;
 	font-weight: normal;
+	margin-right: -4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: solid 1px rgba(0,0,0,0.2);
 }
 input[type="submit"]{
 	padding: 14px;
+	padding-bottom: 12px;
 	width: 120px;
 	color: rgba(0,0,0,0.7);
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-left: solid 1px rgba(0,0,0,0.2);
 }
 input[type="text"]:hover, input[type="submit"]:hover{
 	box-shadow: 0px;
@@ -297,44 +308,58 @@ input[type="text"]:hover, input[type="submit"]:hover{
 }
 .list-inline{
 	display: block;
+	margin: 70px auto;
+	margin-left: 35%;/*canh giữa trang*/
 }
-.icon-social-twitter:before {
-  content: "\e009";
+.list-inline li{
+	margin: 0px auto;
+	padding: 0;
+	display: inline-block;
 }
-.icon-social-facebook:before {
-  content: "\e00b";
+.list-inline li a{
+	display: block;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 25pt; 
+	text-align: center;
+	padding: 0;
+	margin-left: 20px; /*khoang cach icon social-...*/
 }
-.icon-social-github:before {
-  content: "\e60c";
+
+.list-inline a i{
+	vertical-align: inherit;
 }
-.icon-social-google:before {
-  content: "\e60d";
-}
-.icon-social-github a { 
+.social-github a{ 
 	background-color: #333333; 
 	transition: all 0.2s ease-in-out; 
 }
-.icon-social-github a:hover { 
+.social-github a:hover { 
 	background-color: #262626; 
 }
-.icon-social-twitter a { 
+.social-twitter a{ 
 	background-color: #1da1f2; 
 	transition: all 0.2s ease-in-out; 
 }
-.icon-social-twitter a:hover { 
+.social-twitter a:hover { 
 	background-color: #0d95e8; 
 }
-.icon-social-facebook a { 
+.social-facebook a{ 
 	background-color: #3b5998; 
 	transition: all 0.2s ease-in-out; 
 }
-.icon-social-facebook a:hover { 
+.social-facebook a:hover { 
 	background-color: #344e86; 
 }
-.icon-social-google a { 
+.social-google-plus a{ 
 	background-color: #dd4b39; 
 	transition: all 0.2s ease-in-out; 
 }
-.icon-social-google-plus a:hover { 
+.social-google-plus a:hover { 
 	background-color: #d73925; 
+}
+.list-inline a i:hover, .list-inline a:hover{
+	color: #fff;
 }
